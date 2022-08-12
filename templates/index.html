@@ -35,8 +35,9 @@
       <th scope="col">time</th>
     </tr>
   </thead>
-  <tbody>
+
 {% for todo in alltodo %}
+    <tbody>
 <tr>
   <th scope="row">{{ loop.index }}</th>
   <td>{{ todo.title }}</td>
@@ -47,8 +48,9 @@
 
   </tr>
       </tbody>
-</table>
+
   {% endfor %}
+      </table>
   {% endif %}
 
     </div>
